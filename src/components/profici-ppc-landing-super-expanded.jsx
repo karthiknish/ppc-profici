@@ -1,6 +1,6 @@
-"use client";
-import * as React from "react";
-import Link from "next/link";
+'use client';
+import * as React from "react"
+import Link from "next/link"
 import {
   MountainIcon,
   BarChartIcon,
@@ -11,36 +11,25 @@ import {
   Menu,
   ArrowRight,
   Star,
-  Users,
-  Zap,
-  Shield,
   Mail,
 } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+} from "@/components/ui/dropdown-menu"
+import { Input } from "@/components/ui/input"
+import { Label } from "@/components/ui/label"
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Separator } from "@/components/ui/separator";
+} from "@/components/ui/accordion"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import {
   Sheet,
   SheetContent,
@@ -48,7 +37,7 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "@/components/ui/sheet";
+} from "@/components/ui/sheet"
 import {
   Table,
   TableBody,
@@ -57,86 +46,143 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@/components/ui/table";
+} from "@/components/ui/table"
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel";
-import { Progress } from "@/components/ui/progress";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+} from "@/components/ui/carousel"
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
-export default function Component() {
-  const [progress, setProgress] = React.useState(13);
+export function ProficiPpcLandingSuperExpanded() {
+  const [progress, setProgress] = React.useState(13)
 
   React.useEffect(() => {
-    const timer = setTimeout(() => setProgress(66), 500);
+    const timer = setTimeout(() => setProgress(66), 500)
     return () => clearTimeout(timer);
-  }, []);
+  }, [])
 
   return (
-    <div className="flex flex-col min-h-screen">
+    (<div className="flex flex-col min-h-screen">
+      <header className="px-4 lg:px-6 h-14 flex items-center">
+        <Link className="flex items-center justify-center" href="#">
+          <MountainIcon className="h-6 w-6" />
+          <span className="ml-2 text-lg font-bold">Profici</span>
+        </Link>
+        <nav className="ml-auto hidden md:flex gap-4 sm:gap-6">
+          <Link
+            className="text-sm font-medium hover:underline underline-offset-4"
+            href="#features">
+            Features
+          </Link>
+          <Link
+            className="text-sm font-medium hover:underline underline-offset-4"
+            href="#pricing">
+            Pricing
+          </Link>
+          <Link
+            className="text-sm font-medium hover:underline underline-offset-4"
+            href="#testimonials">
+            Testimonials
+          </Link>
+          <Link
+            className="text-sm font-medium hover:underline underline-offset-4"
+            href="#case-studies">
+            Case Studies
+          </Link>
+          <Link
+            className="text-sm font-medium hover:underline underline-offset-4"
+            href="#faq">
+            FAQ
+          </Link>
+        </nav>
+        <Sheet>
+          <SheetTrigger asChild>
+            <Button variant="outline" size="icon" className="md:hidden">
+              <Menu className="h-6 w-6" />
+            </Button>
+          </SheetTrigger>
+          <SheetContent>
+            <SheetHeader>
+              <SheetTitle>Menu</SheetTitle>
+              <SheetDescription>Navigate through our site</SheetDescription>
+            </SheetHeader>
+            <nav className="flex flex-col gap-4 mt-4">
+              <Link
+                className="text-sm font-medium hover:underline underline-offset-4"
+                href="#features">
+                Features
+              </Link>
+              <Link
+                className="text-sm font-medium hover:underline underline-offset-4"
+                href="#pricing">
+                Pricing
+              </Link>
+              <Link
+                className="text-sm font-medium hover:underline underline-offset-4"
+                href="#testimonials">
+                Testimonials
+              </Link>
+              <Link
+                className="text-sm font-medium hover:underline underline-offset-4"
+                href="#case-studies">
+                Case Studies
+              </Link>
+              <Link
+                className="text-sm font-medium hover:underline underline-offset-4"
+                href="#faq">
+                FAQ
+              </Link>
+            </nav>
+          </SheetContent>
+        </Sheet>
+      </header>
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
+                <h1
+                  className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
                   Supercharge Your PPC Campaigns
                 </h1>
-                <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-                  Boost your ROI with Profici's expert pay-per-click management.
-                  Tailored strategies, real-time optimisation, and transparent
-                  reporting.
+                <p
+                  className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
+                  Boost your ROI with Profici's expert pay-per-click management. Tailored strategies, real-time
+                  optimisation, and transparent reporting.
                 </p>
               </div>
               <div className="space-x-4">
                 <Button size="lg">Get Started</Button>
-                <Button variant="outline" size="lg">
-                  Learn More
-                </Button>
+                <Button variant="outline" size="lg">Learn More</Button>
               </div>
             </div>
           </div>
         </section>
         <section
           id="features"
-          className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800"
-        >
+          className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
           <div className="container px-4 md:px-6">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12">
-              Why Choose Profici?
-            </h2>
+            <h2
+              className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12">Why Choose Profici?</h2>
             <Tabs defaultValue="strategies" className="w-full">
               <TabsList className="grid w-full grid-cols-3">
-                <TabsTrigger value="strategies">
-                  Data-Driven Strategies
-                </TabsTrigger>
-                <TabsTrigger value="optimisation">
-                  Real-Time Optimisation
-                </TabsTrigger>
-                <TabsTrigger value="reporting">
-                  Transparent Reporting
-                </TabsTrigger>
+                <TabsTrigger value="strategies">Data-Driven Strategies</TabsTrigger>
+                <TabsTrigger value="optimisation">Real-Time Optimisation</TabsTrigger>
+                <TabsTrigger value="reporting">Transparent Reporting</TabsTrigger>
               </TabsList>
               <TabsContent value="strategies">
                 <Card>
                   <CardHeader>
                     <CardTitle>Data-Driven Strategies</CardTitle>
-                    <CardDescription>
-                      Leverage advanced analytics for optimal campaign
-                      performance.
-                    </CardDescription>
+                    <CardDescription>Leverage advanced analytics for optimal campaign performance.</CardDescription>
                   </CardHeader>
                   <CardContent>
                     <div className="flex items-center space-x-4">
                       <BarChartIcon className="h-12 w-12 text-primary" />
-                      <p>
-                        Our team of experts uses cutting-edge analytics tools to
-                        craft strategies that maximize your ROI.
-                      </p>
+                      <p>Our team of experts uses cutting-edge analytics tools to craft strategies that maximize your ROI.</p>
                     </div>
                   </CardContent>
                 </Card>
@@ -145,17 +191,12 @@ export default function Component() {
                 <Card>
                   <CardHeader>
                     <CardTitle>Real-Time Optimisation</CardTitle>
-                    <CardDescription>
-                      Continuous monitoring and adjustments for peak efficiency.
-                    </CardDescription>
+                    <CardDescription>Continuous monitoring and adjustments for peak efficiency.</CardDescription>
                   </CardHeader>
                   <CardContent>
                     <div className="flex items-center space-x-4">
                       <LineChartIcon className="h-12 w-12 text-primary" />
-                      <p>
-                        We constantly monitor your campaigns and make real-time
-                        adjustments to ensure optimal performance.
-                      </p>
+                      <p>We constantly monitor your campaigns and make real-time adjustments to ensure optimal performance.</p>
                     </div>
                   </CardContent>
                 </Card>
@@ -164,18 +205,12 @@ export default function Component() {
                 <Card>
                   <CardHeader>
                     <CardTitle>Transparent Reporting</CardTitle>
-                    <CardDescription>
-                      Clear, comprehensive reports on your campaign's
-                      performance.
-                    </CardDescription>
+                    <CardDescription>Clear, comprehensive reports on your campaign's performance.</CardDescription>
                   </CardHeader>
                   <CardContent>
                     <div className="flex items-center space-x-4">
                       <PieChartIcon className="h-12 w-12 text-primary" />
-                      <p>
-                        Receive detailed, easy-to-understand reports that
-                        showcase the impact of our PPC management.
-                      </p>
+                      <p>Receive detailed, easy-to-understand reports that showcase the impact of our PPC management.</p>
                     </div>
                   </CardContent>
                 </Card>
@@ -185,19 +220,15 @@ export default function Component() {
         </section>
         <section className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12">
-              Our Process
-            </h2>
+            <h2
+              className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12">Our Process</h2>
             <div className="grid gap-6 lg:grid-cols-3">
               <Card>
                 <CardHeader>
                   <CardTitle>1. Analysis</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p>
-                    We start by thoroughly analyzing your current PPC
-                    performance, industry trends, and competitor strategies.
-                  </p>
+                  <p>We start by thoroughly analyzing your current PPC performance, industry trends, and competitor strategies.</p>
                 </CardContent>
               </Card>
               <Card>
@@ -205,10 +236,7 @@ export default function Component() {
                   <CardTitle>2. Strategy Development</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p>
-                    Based on our analysis, we create a tailored PPC strategy
-                    designed to meet your specific business goals.
-                  </p>
+                  <p>Based on our analysis, we create a tailored PPC strategy designed to meet your specific business goals.</p>
                 </CardContent>
               </Card>
               <Card>
@@ -216,10 +244,7 @@ export default function Component() {
                   <CardTitle>3. Implementation & Optimization</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p>
-                    We implement the strategy and continuously optimize your
-                    campaigns for maximum performance and ROI.
-                  </p>
+                  <p>We implement the strategy and continuously optimize your campaigns for maximum performance and ROI.</p>
                 </CardContent>
               </Card>
             </div>
@@ -227,19 +252,15 @@ export default function Component() {
         </section>
         <section
           id="pricing"
-          className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800"
-        >
+          className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
           <div className="container px-4 md:px-6">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12">
-              Choose Your Plan
-            </h2>
+            <h2
+              className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12">Choose Your Plan</h2>
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               <Card>
                 <CardHeader>
                   <CardTitle>Starter</CardTitle>
-                  <CardDescription>
-                    Perfect for small businesses
-                  </CardDescription>
+                  <CardDescription>Perfect for small businesses</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="text-4xl font-bold">£499/mo</div>
@@ -331,40 +352,31 @@ export default function Component() {
         </section>
         <section id="testimonials" className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12">
-              What Our Clients Say
-            </h2>
-            <Carousel className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto">
+            <h2
+              className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12">What Our Clients Say</h2>
+            <Carousel
+              className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto">
               <CarouselContent>
                 <CarouselItem>
                   <Card>
                     <CardHeader>
                       <CardTitle>Incredible Results</CardTitle>
-                      <CardDescription>
-                        John Smith, CEO of TechCorp
-                      </CardDescription>
+                      <CardDescription>John Smith, CEO of TechCorp</CardDescription>
                     </CardHeader>
                     <CardContent>
-                      <p>
-                        "Profici has transformed our PPC campaigns. We've seen a
-                        200% increase in ROI since partnering with them."
-                      </p>
+                      <p>"Profici has transformed our PPC campaigns. We've seen a 200% increase in ROI since partnering with them."</p>
                     </CardContent>
                   </Card>
                 </CarouselItem>
                 <CarouselItem>
+                  
                   <Card>
                     <CardHeader>
                       <CardTitle>Expert Team</CardTitle>
-                      <CardDescription>
-                        Sarah Johnson, Marketing Director at GrowFast
-                      </CardDescription>
+                      <CardDescription>Sarah Johnson, Marketing Director at GrowFast</CardDescription>
                     </CardHeader>
                     <CardContent>
-                      <p>
-                        "The level of expertise and attention to detail from
-                        Profici's team is unmatched. They truly understand PPC."
-                      </p>
+                      <p>"The level of expertise and attention to detail from Profici's team is unmatched. They truly understand PPC."</p>
                     </CardContent>
                   </Card>
                 </CarouselItem>
@@ -372,16 +384,10 @@ export default function Component() {
                   <Card>
                     <CardHeader>
                       <CardTitle>Game-Changing Strategies</CardTitle>
-                      <CardDescription>
-                        Mike Brown, Founder of StartupX
-                      </CardDescription>
+                      <CardDescription>Mike Brown, Founder of StartupX</CardDescription>
                     </CardHeader>
                     <CardContent>
-                      <p>
-                        "Profici's innovative strategies have helped us
-                        outperform our competitors and scale our business
-                        rapidly."
-                      </p>
+                      <p>"Profici's innovative strategies have helped us outperform our competitors and scale our business rapidly."</p>
                     </CardContent>
                   </Card>
                 </CarouselItem>
@@ -393,25 +399,18 @@ export default function Component() {
         </section>
         <section
           id="case-studies"
-          className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800"
-        >
+          className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
           <div className="container px-4 md:px-6">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12">
-              Case Studies
-            </h2>
+            <h2
+              className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12">Case Studies</h2>
             <div className="grid gap-6 lg:grid-cols-2">
               <Card>
                 <CardHeader>
                   <CardTitle>E-commerce Success Story</CardTitle>
-                  <CardDescription>
-                    How we helped an online retailer increase sales by 150%
-                  </CardDescription>
+                  <CardDescription>How we helped an online retailer increase sales by 150%</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <p>
-                    Our tailored PPC strategy for this e-commerce client
-                    resulted in:
-                  </p>
+                  <p>Our tailored PPC strategy for this e-commerce client resulted in:</p>
                   <ul className="mt-2 space-y-2">
                     <li className="flex items-center">
                       <ArrowRight className="mr-2 h-4 w-4" />
@@ -434,9 +433,7 @@ export default function Component() {
               <Card>
                 <CardHeader>
                   <CardTitle>B2B Lead Generation</CardTitle>
-                  <CardDescription>
-                    Driving quality leads for a SaaS company
-                  </CardDescription>
+                  <CardDescription>Driving quality leads for a SaaS company</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <p>Our PPC campaign for this B2B client achieved:</p>
@@ -464,13 +461,10 @@ export default function Component() {
         </section>
         <section className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12">
-              Our Expertise
-            </h2>
+            <h2
+              className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12">Our Expertise</h2>
             <Table>
-              <TableCaption>
-                Platforms and ad types we specialize in
-              </TableCaption>
+              <TableCaption>Platforms and ad types we specialize in</TableCaption>
               <TableHeader>
                 <TableRow>
                   <TableHead>Platform</TableHead>
@@ -507,9 +501,7 @@ export default function Component() {
                 </TableRow>
                 <TableRow>
                   <TableCell>LinkedIn Ads</TableCell>
-                  <TableCell>
-                    Sponsored Content, Message Ads, Text Ads
-                  </TableCell>
+                  <TableCell>Sponsored Content, Message Ads, Text Ads</TableCell>
                   <TableCell>
                     <div className="flex items-center">
                       <Star className="w-4 h-4 fill-primary" />
@@ -526,49 +518,33 @@ export default function Component() {
         </section>
         <section
           id="faq"
-          className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800"
-        >
+          className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
           <div className="container px-4 md:px-6">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12">
-              Frequently Asked Questions
-            </h2>
+            <h2
+              className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12">Frequently Asked Questions</h2>
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="item-1">
                 <AccordionTrigger>What is PPC management?</AccordionTrigger>
                 <AccordionContent>
-                  PPC management involves overseeing and optimizing
-                  pay-per-click advertising campaigns to maximize their
-                  effectiveness and return on investment.
+                  PPC management involves overseeing and optimizing pay-per-click advertising campaigns to maximize their effectiveness and return on investment.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-2">
-                <AccordionTrigger>
-                  How long does it take to see results?
-                </AccordionTrigger>
+                <AccordionTrigger>How long does it take to see results?</AccordionTrigger>
                 <AccordionContent>
-                  While some improvements can be seen almost immediately,
-                  significant results typically start to show within 3-6 months
-                  of consistent optimization and management.
+                  While some improvements can be seen almost immediately, significant results typically start to show within 3-6 months of consistent optimization and management.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-3">
-                <AccordionTrigger>
-                  Can you work with my existing campaigns?
-                </AccordionTrigger>
+                <AccordionTrigger>Can you work with my existing campaigns?</AccordionTrigger>
                 <AccordionContent>
-                  Yes, we can take over and optimize your existing campaigns, or
-                  we can create new campaigns from scratch based on your
-                  business goals and target audience.
+                  Yes, we can take over and optimize your existing campaigns, or we can create new campaigns from scratch based on your business goals and target audience.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-4">
-                <AccordionTrigger>
-                  What platforms do you work with?
-                </AccordionTrigger>
+                <AccordionTrigger>What platforms do you work with?</AccordionTrigger>
                 <AccordionContent>
-                  We specialize in Google Ads, Microsoft Advertising (Bing Ads),
-                  Facebook Ads, and LinkedIn Ads, but we can also work with
-                  other platforms based on your needs.
+                  We specialize in Google Ads, Microsoft Advertising (Bing Ads), Facebook Ads, and LinkedIn Ads, but we can also work with other platforms based on your needs.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
@@ -578,12 +554,11 @@ export default function Component() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  Ready to Boost Your PPC Performance?
-                </h2>
-                <p className="mx-auto max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  Get started with Profici today and see the difference our
-                  expert PPC management can make for your business.
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Ready to Boost Your PPC Performance?</h2>
+                <p
+                  className="mx-auto max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+                  Get started with Profici today and see the difference our expert PPC management can make for your
+                  business.
                 </p>
               </div>
               <div className="w-full max-w-sm space-y-2">
@@ -594,19 +569,13 @@ export default function Component() {
                   </div>
                   <div className="space-y-1">
                     <Label htmlFor="email">Email</Label>
-                    <Input
-                      id="email"
-                      placeholder="Enter your email"
-                      type="email"
-                    />
+                    <Input id="email" placeholder="Enter your email" type="email" />
                   </div>
                   <div className="space-y-1">
                     <Label htmlFor="company">Company</Label>
                     <Input id="company" placeholder="Enter your company name" />
                   </div>
-                  <Button type="submit" className="w-full">
-                    Start Your Free Trial
-                  </Button>
+                  <Button type="submit" className="w-full">Start Your Free Trial</Button>
                 </form>
                 <p className="text-xs text-gray-500 dark:text-gray-400">
                   By signing up, you agree to our{" "}
@@ -623,8 +592,56 @@ export default function Component() {
             </div>
           </div>
         </section>
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
+          <div className="container px-4 md:px-6">
+            <h2
+              className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12">Our Team</h2>
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              <Card>
+                <CardHeader>
+                  <Avatar className="w-24 h-24 mx-auto">
+                    <AvatarImage src="/placeholder.svg?height=96&width=96" alt="Jane Doe" />
+                    <AvatarFallback>JD</AvatarFallback>
+                  </Avatar>
+                  <CardTitle className="text-center mt-4">Jane Doe</CardTitle>
+                  <CardDescription className="text-center">PPC Strategy Director</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-center">10+ years of experience in digital marketing and PPC management.</p>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardHeader>
+                  <Avatar className="w-24 h-24 mx-auto">
+                    <AvatarImage src="/placeholder.svg?height=96&width=96" alt="John Smith" />
+                    <AvatarFallback>JS</AvatarFallback>
+                  </Avatar>
+                  <CardTitle className="text-center mt-4">John Smith</CardTitle>
+                  <CardDescription className="text-center">Data Analytics Lead</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-center">Expert in data-driven decision making and campaign optimization.</p>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardHeader>
+                  <Avatar className="w-24 h-24 mx-auto">
+                    <AvatarImage src="/placeholder.svg?height=96&width=96" alt="Emily Brown" />
+                    <AvatarFallback>EB</AvatarFallback>
+                  </Avatar>
+                  <CardTitle className="text-center mt-4">Emily Brown</CardTitle>
+                  <CardDescription className="text-center">Client Success Manager</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-center">Dedicated to ensuring client satisfaction and campaign success.</p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
       </main>
-      <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
+      <footer
+        className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
         <p className="text-xs text-gray-500 dark:text-gray-400">
           © 2024 Profici Ltd. All rights reserved.
         </p>
@@ -652,13 +669,19 @@ export default function Component() {
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end">
-              <DropdownMenuItem>Light</DropdownMenuItem>
-              <DropdownMenuItem>Dark</DropdownMenuItem>
-              <DropdownMenuItem>System</DropdownMenuItem>
+              <DropdownMenuItem>
+                Light
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                Dark
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                System
+              </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
         </div>
       </footer>
-    </div>
+    </div>)
   );
 }
