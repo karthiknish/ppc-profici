@@ -346,8 +346,9 @@ export default function Component() {
                     </CardHeader>
                     <CardContent>
                       <p>
-                        "Profici has transformed our PPC campaigns. We&apos;ve
-                        seen a 200% increase in ROI since partnering with them."
+                        &quot;Profici has transformed our PPC campaigns.
+                        We&apos;ve seen a 200% increase in ROI since partnering
+                        with them.&quot;
                       </p>
                     </CardContent>
                   </Card>
@@ -362,9 +363,9 @@ export default function Component() {
                     </CardHeader>
                     <CardContent>
                       <p>
-                        "The level of expertise and attention to detail from
-                        Profici&apos;s team is unmatched. They truly understand
-                        PPC."
+                        &quot;The level of expertise and attention to detail
+                        from Profici&apos;s team is unmatched. They truly
+                        understand PPC.&quot;
                       </p>
                     </CardContent>
                   </Card>
@@ -379,9 +380,9 @@ export default function Component() {
                     </CardHeader>
                     <CardContent>
                       <p>
-                        "Profici&apos;s innovative strategies have helped us
-                        outperform our competitors and scale our business
-                        rapidly."
+                        &quot;Profici&apos;s innovative strategies have helped
+                        us outperform our competitors and scale our business
+                        rapidly.&quot;
                       </p>
                     </CardContent>
                   </Card>
