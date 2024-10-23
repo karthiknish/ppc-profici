@@ -87,9 +87,9 @@ export default function Component() {
                   Supercharge Your PPC Campaigns
                 </h1>
                 <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-                  Boost your ROI with Profici's expert pay-per-click management.
-                  Tailored strategies, real-time optimisation, and transparent
-                  reporting.
+                  Boost your ROI with Profici&apos;s expert pay-per-click
+                  management. Tailored strategies, real-time optimisation, and
+                  transparent reporting.
                 </p>
               </div>
               <div className="space-x-4">
@@ -165,7 +165,7 @@ export default function Component() {
                   <CardHeader>
                     <CardTitle>Transparent Reporting</CardTitle>
                     <CardDescription>
-                      Clear, comprehensive reports on your campaign's
+                      Clear, comprehensive reports on your campaign&apos;s
                       performance.
                     </CardDescription>
                   </CardHeader>
@@ -346,8 +346,8 @@ export default function Component() {
                     </CardHeader>
                     <CardContent>
                       <p>
-                        "Profici has transformed our PPC campaigns. We've seen a
-                        200% increase in ROI since partnering with them."
+                        "Profici has transformed our PPC campaigns. We&apos;ve
+                        seen a 200% increase in ROI since partnering with them."
                       </p>
                     </CardContent>
                   </Card>
@@ -363,7 +363,8 @@ export default function Component() {
                     <CardContent>
                       <p>
                         "The level of expertise and attention to detail from
-                        Profici's team is unmatched. They truly understand PPC."
+                        Profici&apos;s team is unmatched. They truly understand
+                        PPC."
                       </p>
                     </CardContent>
                   </Card>
@@ -378,7 +379,7 @@ export default function Component() {
                     </CardHeader>
                     <CardContent>
                       <p>
-                        "Profici's innovative strategies have helped us
+                        "Profici&apos;s innovative strategies have helped us
                         outperform our competitors and scale our business
                         rapidly."
                       </p>
